@@ -70,8 +70,7 @@
             margin: 0.5em 0;
             border: 1px solid #ccc;
             border-radius: 4px;
-            color: black;
-            background-color: white;
+            
         }
         .about-form button {
             background: #333;
@@ -158,8 +157,10 @@
         .about-form textarea,.about-form button,.about-form h2,.about-form strong {
             color:#B2FFFF;
         }
-        .about-form option{
-            color:black;
+        .about-form input,
+        .about-form select{
+            color: black;
+            background-color: white;
         }
         .club-preferences-wrapper {
             display: block; 
@@ -185,7 +186,7 @@
     <section id="form">
         <form class="about-form" action="https://college-clubs-1.onrender.com/about-form" method="post">
             <section id="about">
-                <h2><strong>About</strong></h2>
+                
                 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -266,7 +267,7 @@
             
             </section>
             <section id="contacts">
-                <h2><strong>Contacts</strong></h2>
+                
                 <label for="email">College Email id:</label>
                 <input type="email" id="email" name="email" required>
                 <input type="reset" value="Reset">
