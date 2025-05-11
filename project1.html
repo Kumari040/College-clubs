@@ -162,50 +162,97 @@
         <a href="#projects">Hobbies</a>
         <a href="#contacts">Contacts</a>
     </nav> -->
+    <section id="form">
+        <form class="about-form" action="about-form" method="post">
+            <section id="about">
+                <h2><strong>About</strong></h2>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="dept">Department:</label>
+                <select id="dept" name="dept" required>
+                    <option value="">Select Department</option>
+                    <option value="cse">Computer Science and Engineering</option>
+                    <option value="aiml">Specialisation In Artificial & Machine Learning</option>
+                    <option value="ds">Specialisation In Data Science</option>
+                    <option value="iot">Internet Of Things</option>
+                    <option value="csbs">Somputer Science & Business System</option>
+                    <option value="it">Information Technology</option>
+                    <option value="ece">Electronics & Communication Engineering</option>
+                    <option value="me">Mechanical Engineering</option>
+                    <option value="ee">Electrical Engineering</option>
+                    <option value="ce">Civil Engineering</option>
+                    <option value="bt">Biotechnology</option>
+                </select>
+                <label for="year">Year:</label>
+                <select name="year" id="year">
+                    <option value="first">1st</option>
+                    <option value="second">2nd</option>
+                    <option value="third">3rd</option>
+                    <option value="fourth">4th</option>
+                </select>
+                <input type="reset" value="Reset">
+            
+            </section>
+            <section id="projects">
+                <h2><strong>CLUB PREFERENCES</strong></h2>
+                
+                <label for="works">Select 3 clubs according to your preferences:</label>
+                <select id="clubpref1" name="clubpref1" required>
+                    <option value="">Select the Clubs</option>
+                    <option value="sports">Sports</option>
+                    <option value="Ghungroo">Ghungroo</option>
+                    <option value="Resonance">Resonance</option>
+                    <option value="Anubhav">Anubhav</option>
+                    <option value="Anahita">Anahita</option>
+                    <option value="Gdsc">Gdsc</option>
+                    <option value="Geeks">Geeks</option>
+                    <option value="Nss">NSS</option>
+                    <option value="Hfc">HFC</option>
+                    <option value="Pravasana">Pravasana</option>
+                </select>
+                <select id="clubpref2" name="clubpref2" required>
+                    <option value="">Select the Clubs</option>
+                    <option value="sports">Sports</option>
+                    <option value="Ghungroo">Ghungroo</option>
+                    <option value="Resonance">Resonance</option>
+                    <option value="Anubhav">Anubhav</option>
+                    <option value="Anahita">Anahita</option>
+                    <option value="Gdsc">Gdsc</option>
+                    <option value="Geeks">Geeks</option>
+                    <option value="Nss">NSS</option>
+                    <option value="Hfc">HFC</option>
+                    <option value="Pravasana">Pravasana</option>
+                </select>
+                <select id="clubpref3" name="clubpref3" required>
+                    <option value="">Select the Clubs</option>
+                    <option value="sports">Sports</option>
+                    <option value="Ghungroo">Ghungroo</option>
+                    <option value="Resonance">Resonance</option>
+                    <option value="Anubhav">Anubhav</option>
+                    <option value="Anahita">Anahita</option>
+                    <option value="Gdsc">Gdsc</option>
+                    <option value="Geeks">Geeks</option>
+                    <option value="Nss">NSS</option>
+                    <option value="Hfc">HFC</option>
+                    <option value="Pravasana">Pravasana</option>
+                </select>
+                <input type="reset" value="Reset">
+            
+            </section>
+            <section id="contacts">
+                <h2><strong>Contacts</strong></h2>
+                <label for="email">College Email id:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="reset" value="Reset">
+                
+            
+            </section>
+            <button type="submit" >Submit</button>
+        </form>
+    </section>
 
-    <section id="about">
-        <h2><strong>About</strong></h2>
-        <form class="about-form" action="about-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="dept">Department:</label>
-            <input type="text" id="dept" name="dept" required>
-            <label for="year">Year:</label>
-            <select name="year" id="year">
-                <option value="first">1st</option>
-                <option value="second">2nd</option>
-                <option value="third">3rd</option>
-                <option value="fourth">4th</option>
-            </select>
-            <input type="reset" value="Reset">
-        </form>
-    </section>
-    <section id="projects">
-        <h2><strong>Hobbies</strong></h2>
-        <form class="projects-form" action="projects-form">
-            <label for="works">Write about your hobbies:</label>
-            <textarea name="works" id="works" cols="30" rows="10"></textarea>
-            <input type="reset" value="Reset">
-        </form>
-    </section>
-    <section id="contacts">
-        <h2><strong>Contacts</strong></h2>
-        <form class="contacts-form" action="contacts-form">
-            <label for="number">Phone no:</label>
-            <input type="tel" id="number" name="number" pattern="\d{10}" maxlength="10" oninput="validatePhoneNumber()" title="Phone number must be exactly 10 digits" required>
-            <label for="email">College Email id:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="reset" value="Reset">
-            <button type="submit">Submit now</button>
-        </form>
-    </section>
-
-    <script>
-        function validatePhoneNumber() {
-            const phoneInput = document.getElementById("number");
-            phoneInput.value = phoneInput.value.replace(/\D/g, '');  
-        }
-    </script>
+    
 
     <footer>
         <div>
