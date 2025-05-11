@@ -72,7 +72,7 @@
         }
         .about-form button {
             background: #333;
-            color:#850f26;
+            color:#580537;
             border: none;
             padding: 0.75em 1.5em;
             border-radius: 4px;
@@ -83,7 +83,7 @@
         }
         footer {
             background-color: rgba(34, 34, 34, 0.9); 
-            color:#475569;
+            color:#580537;
             text-align: center;
             padding: 20px;
             border-radius: 10px;
@@ -153,7 +153,15 @@
         }
         .about-form,.about-form label,.about-form input,.about-form select,
         .about-form textarea,.about-form button,.about-form h2,.about-form strong {
-            color: #0f172a;
+            color: #450334;
+        }
+        .club-preferences-wrapper {
+            display: block; 
+            margin: 1em 0;
+        }
+        .club-preferences-wrapper select {
+            width: 100%;
+            margin: 0.5em 0; 
         }
 
     </style>
@@ -204,7 +212,7 @@
                 <h2><strong>CLUB PREFERENCES</strong></h2>
                 
                 <label for="works">Select 3 clubs according to your preferences:</label>
-                <div>
+                <div class="club-preferences-wrapper">
                     <select id="clubpref1" name="clubpref1" required>
                         <option value="">Select the Clubs</option>
                         <option value="sports">Sports</option>
@@ -218,8 +226,7 @@
                         <option value="Hfc">HFC</option>
                         <option value="Pravasana">Pravasana</option>
                     </select>
-                </div>
-                <div>
+        
                     <select id="clubpref2" name="clubpref2" required>
                         <option value="">Select the Clubs</option>
                         <option value="sports">Sports</option>
@@ -233,8 +240,7 @@
                         <option value="Hfc">HFC</option>
                         <option value="Pravasana">Pravasana</option>
                     </select>
-                </div>
-                <div>
+                
                     <select id="clubpref3" name="clubpref3" required>
                         <option value="">Select the Clubs</option>
                         <option value="sports">Sports</option>
@@ -284,7 +290,7 @@
 
             if (club1 === club2 || club1 === club3 || club2 === club3) {
                 alert("Each club preference must be different. Please choose unique clubs.");
-                event.preventDefault(); // Stop the form from submitting
+                event.preventDefault(); 
             }
         });
     </script>
