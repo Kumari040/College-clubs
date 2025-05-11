@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express=require("express");
 const app=new express();
 const mongoose=require("mongoose");
 const bodyParser=require("body-parser");
 const cors=require("cors");
 const {formModel}=require("./db");
-require("dotenv").config();
+
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
