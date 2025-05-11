@@ -63,14 +63,14 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             margin-bottom: 2em;
         }
-        .about-form input, .about-form textarea, .projects-form textarea, .contacts-form input {
+        .about-form input {
             width: 100%;
             padding: 0.5em;
             margin: 0.5em 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        .about-form button, .projects-form button, .contacts-form button {
+        .about-form button {
             background: #333;
             color:#4682B4;
             border: none;
@@ -78,7 +78,7 @@
             border-radius: 4px;
             cursor: pointer;
         }
-        .about-form button:hover, .projects-form button:hover, .contacts-form button:hover {
+        .about-form button:hover {
             background: #555;
         }
         footer {
@@ -143,13 +143,18 @@
             nav a {
                 font-size: 14px;
             }
-            .about-form input, .projects-form textarea, .contacts-form input {
+            .about-form input {
                 padding: 0.4em;
             }
-            .about-form button, .projects-form button, .contacts-form button {
+            .about-form button {
                 padding: 0.6em 1.2em;
             }
         }
+        .about-form,.about-form label,.about-form input,.about-form select,
+        .about-form textarea,.about-form button,.about-form h2,.about-form strong {
+            color: #4682B4;
+        }
+
     </style>
 </head>
 <body>
@@ -198,45 +203,52 @@
                 <h2><strong>CLUB PREFERENCES</strong></h2>
                 
                 <label for="works">Select 3 clubs according to your preferences:</label>
-                <select id="clubpref1" name="clubpref1" required>
-                    <option value="">Select the Clubs</option>
-                    <option value="sports">Sports</option>
-                    <option value="Ghungroo">Ghungroo</option>
-                    <option value="Resonance">Resonance</option>
-                    <option value="Anubhav">Anubhav</option>
-                    <option value="Anahita">Anahita</option>
-                    <option value="Gdsc">Gdsc</option>
-                    <option value="Geeks">Geeks</option>
-                    <option value="Nss">NSS</option>
-                    <option value="Hfc">HFC</option>
-                    <option value="Pravasana">Pravasana</option>
-                </select>
-                <select id="clubpref2" name="clubpref2" required>
-                    <option value="">Select the Clubs</option>
-                    <option value="sports">Sports</option>
-                    <option value="Ghungroo">Ghungroo</option>
-                    <option value="Resonance">Resonance</option>
-                    <option value="Anubhav">Anubhav</option>
-                    <option value="Anahita">Anahita</option>
-                    <option value="Gdsc">Gdsc</option>
-                    <option value="Geeks">Geeks</option>
-                    <option value="Nss">NSS</option>
-                    <option value="Hfc">HFC</option>
-                    <option value="Pravasana">Pravasana</option>
-                </select>
-                <select id="clubpref3" name="clubpref3" required>
-                    <option value="">Select the Clubs</option>
-                    <option value="sports">Sports</option>
-                    <option value="Ghungroo">Ghungroo</option>
-                    <option value="Resonance">Resonance</option>
-                    <option value="Anubhav">Anubhav</option>
-                    <option value="Anahita">Anahita</option>
-                    <option value="Gdsc">Gdsc</option>
-                    <option value="Geeks">Geeks</option>
-                    <option value="Nss">NSS</option>
-                    <option value="Hfc">HFC</option>
-                    <option value="Pravasana">Pravasana</option>
-                </select>
+                <div>
+                    <select id="clubpref1" name="clubpref1" required>
+                        <option value="">Select the Clubs</option>
+                        <option value="sports">Sports</option>
+                        <option value="Ghungroo">Ghungroo</option>
+                        <option value="Resonance">Resonance</option>
+                        <option value="Anubhav">Anubhav</option>
+                        <option value="Anahita">Anahita</option>
+                        <option value="Gdsc">Gdsc</option>
+                        <option value="Geeks">Geeks</option>
+                        <option value="Nss">NSS</option>
+                        <option value="Hfc">HFC</option>
+                        <option value="Pravasana">Pravasana</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="clubpref2" name="clubpref2" required>
+                        <option value="">Select the Clubs</option>
+                        <option value="sports">Sports</option>
+                        <option value="Ghungroo">Ghungroo</option>
+                        <option value="Resonance">Resonance</option>
+                        <option value="Anubhav">Anubhav</option>
+                        <option value="Anahita">Anahita</option>
+                        <option value="Gdsc">Gdsc</option>
+                        <option value="Geeks">Geeks</option>
+                        <option value="Nss">NSS</option>
+                        <option value="Hfc">HFC</option>
+                        <option value="Pravasana">Pravasana</option>
+                    </select>
+                </div>
+                <div>
+                    <select id="clubpref3" name="clubpref3" required>
+                        <option value="">Select the Clubs</option>
+                        <option value="sports">Sports</option>
+                        <option value="Ghungroo">Ghungroo</option>
+                        <option value="Resonance">Resonance</option>
+                        <option value="Anubhav">Anubhav</option>
+                        <option value="Anahita">Anahita</option>
+                        <option value="Gdsc">Gdsc</option>
+                        <option value="Geeks">Geeks</option>
+                        <option value="Nss">NSS</option>
+                        <option value="Hfc">HFC</option>
+                        <option value="Pravasana">Pravasana</option>
+                    </select>
+                </div>
+                
                 <input type="reset" value="Reset">
             
             </section>
