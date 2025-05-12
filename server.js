@@ -23,6 +23,26 @@ app.post("/about-form",async function(req,res){
         res.status(500).send('Error saving form data');
     }
 })
+app.get("/club-stats", async (req, res) => {
+    try {
+        const forms = await formModel.find();
+        const stats = {};
+
+        forms.forEach(entry => {
+            [entry.clubpref1, entry.clubpref2, entry.clubpref3].forEach(club => {
+                if (club) {
+                    stats[club] = (stats[club] || 0) + 1;
+                }
+            });
+        });
+
+        res.json(stats);
+    } catch (err) {
+        console.error("Error fetching stats:", err);
+        res.status(500).json({ message: "Error retrieving club stats" });
+    }
+});
+
 
 const PORT = process.env.PORT || 5500;
 app.listen(PORT, () => {
